@@ -3,6 +3,21 @@
     padding: 0;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    align-items: end;
+}
+
 nav {
     height: 5rem;
     width: 100%;
@@ -12,7 +27,6 @@ nav {
     flex-direction: column;
     align-items: end;
     padding-right: 5px;
-
 }
 
 ul {
@@ -45,18 +59,20 @@ h1 {
     margin-bottom: 2em;
 }
 
+embed {
+    align-self: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .p1 {
     display: flex;
     flex-direction: row;
     text-align: center;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-
-    text-align: center;
-    font-size: 22px;
 }
 
 .middleBody {
@@ -70,7 +86,9 @@ footer {
 }
 
 .profile {
-    height: 70%;
+    width: 40%;
+    flex: 1;
+    padding: 1rem;
 }
 
 .row {
@@ -78,14 +96,86 @@ footer {
     flex-direction: row;
 }
 
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-height {
+    height: 100%;
+}
+
 .p1 {
     flex: 2;
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-.p1 span {
     font-size: 1.4em;
     text-align: start;
+    padding: 3rem;
+}
+
+.form-container {
+    flex: 1;
+    padding-top: 3rem;
+    width: 80%;
+    max-width: 600px; 
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-container div {
+    margin: 10px;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form-name {
+    padding-left: 1rem;
+}
+
+.form-country-label {
+    padding-right: 1.2rem;
+}
+
+.form-name input {
+    width: 25rem;
+    height: 80%;
+}
+
+textarea {
+    height: 5rem;
+    width: 25rem;
+}
+
+.submit{
+    height: 100%;
+    width: 40%;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.project-container h2 {
+    color: darkblue;
+    font-size: 1.8rem;
+}
+
+.project-content {
+    padding-top: 1rem;
+    width: 80%;
+    font-size: 1.4rem;
+}
+.divider {
+    height: 3px;
+    background-color: black;
+    width: 80%;
 }
